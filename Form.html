@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form for college Admission</title>
+<style>
+    body{
+        background-color: #91ece0;
+    }
+    table {
+        font-size: 20px;
+        font-family:Serif ;
+        text-align: left;
+    
+    }
+    div {
+        margin-top: 10px;
+        margin-left: 300px;
+        margin-right: 300px;
+       border: 1px solid hsl(204, 39%, 49%);
+       background-color:#44d8c6;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+    .button{
+        background-color: hsl(192, 95%, 34%);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        padding: 12px 18px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        
+    }
+    th, td {
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+    <h1 style="text-align: center;">UG Application form</h1>
+    <div>
+    <form action="" method="post">
+    <table align="center">
+        <tr>
+            <td rowspan="15">
+                <img src="https://www.pcworld.com/wp-content/uploads/2023/04/cw_cheat_sheet_microsoft_outlook_2016_a_2400x1600-100849353-orig.jpg?quality=50&strip=all" alt="" style="width: 600px;height: 600px;">
+            </td>
+            <td> <label for="name">Name</label>
+            </td>
+            <td>
+                <input type="text" placeholder="Enter your name" required/>
+            </td>
+        </tr>
+        <tr>
+            <td> <label for="mail">Email</label>
+            </td>
+            <td>
+                <input type="email" placeholder="Enter your mail" required/>
+            </td>
+        </tr>
+        <tr>
+            <td> <label for="dof">Date of Birth</label>
+            </td>
+            <td>
+                <input type="date" required />
+             </td>
+        </tr>
+        <tr>
+                <td> <label for="fname">Father Name</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter your father name" required/>
+                </td>
+        </tr>
+        <tr>
+            <td> <label for="Address">Address</label>
+            </td>
+            <td>
+                <textarea ></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td> <label for="gender">Gender</label>
+            </td>
+            <td>
+                <input type="radio">Male
+                <input type="radio">Female
+
+            </td>
+        </tr>
+        <tr>
+            <td> <label for="phone number">Enter moblie number</label>
+            </td>
+            <td>
+                <input type="tel" placeholder="Enter your Number" maxlength="10"/>
+            
+            </td>
+        </tr>
+        <tr>
+            <td> <label for="mark">12th Mark</label>
+            </td>
+            <td>
+                <input type="text" placeholder="Enter your mark" maxlength="3" required/>
+            </td>
+        </tr>   
+        <tr>
+            <td> <label for="mark">12th Department</label>
+            </td>
+            <td>
+                <input type="text" placeholder="Enter your department" required/>
+            </td>
+        </tr>   
+        <tr>
+            <td> <label for="mark">Year of Passing</label>
+            </td>
+            <td>
+                <input type="year" required/>
+            </td>
+        </tr>   
+        <tr>
+            <td> <label for="Department">choose Department</label>
+            </td>
+            <td>
+                <select>
+                    <option >B.Sc Mathematics</option>
+                    <option >B.Sc Physics</option>
+                    <option >B.A Tamil</option>
+                    <option >B.A English</option>
+                    <option >B.Com</option>
+            </td>
+        </tr>   
+        <tr>
+            <td align="center">
+                <button type="submit" class="button " onclick="sub()">Submit</button>
+            </td>
+            <td align="center">
+                <button type="reset" class="button">Reset</button>
+            </td>
+        </tr>   
+    </table>
+    </form>
+ </div>
+ <script>
+    function sub(){
+        alert("Successfully submited");
+    }
+ </script>
+</body>
+</html>

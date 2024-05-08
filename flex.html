@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex creation</title>
+</head>
+<style>
+    body{
+        background-color: rgb(222, 216, 216);
+        font-family: arial;
+    }
+    .con1{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        
+    
+    }
+    .con1{
+        border: 3px solid #f6baec;
+        background-color: #e997db;
+        margin: 3px; 
+        padding: 5px;
+        
+    }
+    .b1{
+        
+        margin: 3px;
+        padding: 10px;
+        color:rgb(11, 9, 9);
+        width: 60px;
+        text-align: center;
+        cursor: pointer;
+
+    }
+    .b1:hover{
+        width: 60px;
+        height: 30px;
+        transition: 1s;
+        text-decoration: double;
+        border: 3px solid black;
+    }
+    .con2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .con2{
+        
+        padding: 10px;
+    }
+    .b2{
+        
+        margin: 3px;
+        padding: 10px;
+     }
+     
+     .con3{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 3px solid black;
+    }
+    .b3:nth-child(2) {
+     display: flex;
+     flex-grow: 2;
+     justify-content: center;
+     align-items: center;
+    }
+    .b3{
+        margin: 3px;
+        padding: 10px;
+     }
+     .con4{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 3px solid black;
+    }
+    .b4:nth-child(1) {
+     display: flex;
+     flex-grow: 2;
+     justify-content: center;
+     align-items: center;
+    }
+    .b4{
+        margin: 3px;
+        padding: 10px;
+     }
+     .i5:hover{
+        transition: 1s;
+        transform:scale(1.2);
+     }
+     
+    
+</style>
+<body>
+    <h1 style="text-align: center; font-size: 40px;">Flower gardan</h1>
+    <div class="con1">
+        <div class="b1"><a style="text-decoration: none;" href="#">Home</a></div>
+        <div class="b1"><a style="text-decoration: none;" href="#">Menu</a></div>
+        <div class="b1"><a style="text-decoration: none;" href="#">Gallary</a></div>
+        <div class="b1"><a style="text-decoration: none;" href="#">About</a></div>
+        <div class="b1"><a style="text-decoration: none;" href="#">Services</a></div>
+        <div class="b1"><a style="text-decoration: none;" href="#">Contact</a></div>
+    </div><hr>
+    <h1 style="text-align: left; font-size: 30px;padding-left: 10px;">Indian Flowers</h1>
+    <div class="con2">
+        <div class="b2"><img class="i5" style="height: 300px; width: 300px;" src="https://cdn.shopify.com/s/files/1/0579/7924/0580/t/18/assets/moggra.jpg?v=1661886782" alt=""><br><p>Jasmine</p></div>
+        <div class="b2"><img class="i5" style="height: 300px; width: 300px;" src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcRoZC_JQAsW5rB_YteF6L0u0o94iMUKzkHxa8ibXSoB79pY8mNVv5BnbKehy7mZTEBS" alt=""><br><p>Rose</p></div>
+        <div class="b2"><img class="i5" style="height: 300px; width: 300px;" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReLh5DArhKXNfuIui1HzuHJ7btHOKb8xWZuzc0lHPvl0Z52IrU" alt=""><br><p>Lotus</p></div>
+        <div class="b2"><img class="i5" style="height: 300px; width: 300px;" src="http://t3.gstatic.com/images?q=tbn:ANd9GcTxB2OFzSVC25ESVb8xgtzobgRPsVz8OKTfALA3pixCgOlL8j49" alt=""><br><p>Sun Flower</p></div>
+        <div class="b2"><img class="i5" style="height: 300px; width: 300px;" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Dahlia_x_hybrida.jpg" alt=""><br><p>Dahlia</p></div>
+    </div>
+    <hr>
+    <h1 style="text-align: left; font-size: 30px;padding-left: 10px;">Medicine Flowers</h1>
+    <div class="con3">
+        <div class="b3"><img  style="height: 300px; width: 400px;" src="https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_620/MTc3NTI5OTUyODQwMDAwOTQ3/7-common-flowers-with-health-benefits.webp" alt=""><br><p style="font-size: 20px;text-align: center;"><b>Lavender Flowers</b></p>
+            </div>
+        <div class="b3"><p style="font-size: 25px;">Lavender flowers are bright violet in colour, and have a fresh, sweet fragrance. <br> It has a calming effect on the senses.Because of this quality, lavender extract <br> and scent are frequently used in making talcum powders, perfumes, <br>essential bath oils, spa treatments, air freshener, etc. <br> The fragrance of lavender is said to relax the mind and ease stress.</p></div>
+       
+    </div>
+    <div class="con4">
+        <div class="b4"><p style="font-size: 25px;">Cotton flowers or kapas ke phool in Hindi, are white in colour. <br>The seeds are considered highly beneficial according to the Ayurveda, as a nerve tonic  <br>and aphrodisiac.They are believed to control the three vital elements in our body, <br> namely—gas, bile, cough (Vata, Pitta, Kapha), and maintain their balance.</p>
+        </div>
+        <div class="b4"><img  style="height: 300px; width: 400px;" src="https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_620/MTc3NTI5OTUyODQwMTk3NTU1/7-common-flowers-with-health-benefits.webp" alt=""><br><p style="font-size: 20px;text-align: center;"><b>Cotton Flowers</b></p></div>
+    </div>
+</body>
+</html>
